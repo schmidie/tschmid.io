@@ -2,36 +2,65 @@
 title: Welcome
 ---
 
-.page-section
-  .row.text-start
-    .col-lg-6
-      h1.text-primary Tobias Schmid 
-      h2 building digital products.
-      .py-4.text-secondary
-        h3 > IT Management
-        h3 > IT Consulting 
-        h3 > Web Development 
-    .col-lg-6.text-start
-      h4
-        bi.bi-patch-check
-        |  M.Sc. Informatik
-      h4
-        bi.bi-patch-check
-        |  B.Sc. Software Engineering
+.row.justify-content-md-center
+  .col-7
+    .page-section
+      .row.text-secondary
+        .col-6.text-start
+          h4
+            button.btn.btn-outline-primary
+              i.bi.bi-telephone-fill
+              a href="tel:+491111111"
+                |  +49-179 111 1111
+
+        .col-6.text-end
+          h4
+            button.btn.btn-outline-primary
+              i.bi.bi-envelope-fill
+              a href="mailto:hi@tschmid.io"
+                |  hi@tschmid.io
+
+      .row.py-5.text-start
+        .col-6
+          h1.text-primary Tobias Schmid 
+          h2 building digital products.
+          .py-4.text-secondary
+            h3 > IT Management
+            h3 > IT Consulting 
+            h3 > Web Development 
+          .py-4.text-secondary
+            h4
+              i.bi.bi-patch-check-fill
+              |  M.Sc. Informatik
+            h4
+              i.bi.bi-patch-check-fill
+              |  B.Sc. Software Engineering
+
+        .col-6.text-end.d-none.d-xxl-block
+          img.img-fluid.rounded src="#{image_path('portrait.png')}"
+
+    .page-section
+      .row 
+        .col
+          .d-grid.gap-2.col-6.mx-auto
+            a.button.btn.btn-outline-primary href="mailto:hi@tschmid.io"
+              i.bi.bi-rocket-takeoff-fill
+              |  Kostenlose Erstberatung 
+              i.bi.bi-rocket-takeoff-fill
 
 
-hr[class="divider divider-right"]
+/ hr[class="divider divider-right"]
 
-.page-section
-  .row.justify-content-center.text-center
-    .col-lg-8
-      = partial 'partials/company_logo_carousel'
+/ .page-section
+/   .row.justify-content-center.text-center
+/     .col-lg-8
+/       = partial 'partials/company_logo_carousel'
 
-hr[class="divider divider-right"]
+/ hr[class="divider divider-right"]
 
-.page-section
-  .row.justify-content-center.text-center
-    .col
-      .pb-3
-        h1 Portfolio
-      = partial 'partials/portfolio'
+/ .page-section
+/   .row.justify-content-center.text-center
+/     .col
+/       .pb-3
+/         h1 Portfolio
+/       = partial 'partials/portfolio'
