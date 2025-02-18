@@ -11,8 +11,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: build website
-      run: bin/build
+      # - name: build website
+      # run: bin/build
 
       - name: Cloning repo
         uses: actions/checkout@v4
