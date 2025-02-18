@@ -1,20 +1,16 @@
 nav#mainNav.navbar.navbar-expand-lg.navbar-light.bg-body-tertiary.fixed-top.py-2
   .container-fluid.px-4.px-lg-5
-    a.navbar-brand[href="/"]
-      | toschmid
-    button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.ms-auto.my-2.my-lg-0
-        li.nav-item
-          a.nav-link.active[href="#"]
-            | HOME
-        li.nav-item
-          a.nav-link[href="#"]
-            | PORTFOLIO
-        li.nav-item
-          a.nav-link[href="#"]
-            | ABOUT
-        li.nav-item
-          a.nav-link[href="#"]
-            | CONTACT
+
+    .text-start
+      h4
+        button.btn.btn-outline-dark href="tel:+491791451810"
+          i.bi.bi-telephone-fill
+          a
+            |  +49 179 145 181 0
+
+    .text-end
+      h4
+        button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
+          i.bi.bi-envelope-fill
+          a
+            |  hi@tschmid.io

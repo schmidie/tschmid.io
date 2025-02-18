@@ -1,7 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-set :title, "toschmid.io"
+set :title, "TSchmid.io"
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -53,5 +53,5 @@ configure :build do
   activate :minify_css
   activate :minify_javascript, compressor: Terser.new
   #   activate :asset_hash
-  #   activate :relative_assets
+  activate :relative_assets
 end

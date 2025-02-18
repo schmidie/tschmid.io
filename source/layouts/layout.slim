@@ -5,16 +5,26 @@ html
     meta[http-equiv="x-ua-compatible" content="ie=edge"]
     meta[name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"]
     title
-      = "#{config[:title]} - #{current_page.data.title}"
+      - if current_page.data.title.present?
+        = "#{config[:title]} - #{current_page.data.title}"
+      - else
+        = "#{config[:title]}"
+
     = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
 
   body.min-vh-100.d-flex.flex-column
-    / = partial 'partials/navbar'
+    .d-lg-none
+      = partial 'partials/navbar_mobile'
+    .d-none.d-lg-block
+      = partial 'partials/navbar'
     .container.flex-grow-1
       .row.justify-content-center.text-center
         .col
           = yield
     
     .page-section
-    = partial 'partials/footer'
-    = javascript_include_tag "application"
+      .d-lg-none
+        = partial 'partials/footer_mobile'
+      .d-none.d-lg-block
+        = partial 'partials/footer'

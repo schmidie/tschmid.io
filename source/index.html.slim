@@ -1,34 +1,28 @@
----
-title: Welcome
----
+/ ---
+/ title: Welcome
+/ ---
 
 .row.justify-content-md-center
-  .col-7
+  .col-12.col-xl-7
     .page-section
-      .row.text-secondary
-        .col-6.text-start
-          h4
-            button.btn.btn-outline-primary
-              i.bi.bi-telephone-fill
-              a href="tel:+491111111"
-                |  +49-179 111 1111
-
-        .col-6.text-end
-          h4
-            button.btn.btn-outline-primary
-              i.bi.bi-envelope-fill
-              a href="mailto:hi@tschmid.io"
-                |  hi@tschmid.io
-
       .row.py-5.text-start
-        .col-6
-          h1.text-primary Tobias Schmid 
-          h2 building digital products.
-          .py-4.text-secondary
+        .d-lg-none
+          .col-12.pb-5
+            img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
+            h2.text-end
+              a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
+                i.px-1.bi.bi-linkedin
+        .col-12.col-lg-6
+          
+          h1 Tobias Schmid 
+          h1.text-primary building digital products.
+
+          .py-5.text-secondary
             h3 > IT Management
             h3 > IT Consulting 
             h3 > Web Development 
-          .py-4.text-secondary
+          
+          .py-2.text-secondary
             h4
               i.bi.bi-patch-check-fill
               |  M.Sc. Informatik
@@ -36,31 +30,54 @@ title: Welcome
               i.bi.bi-patch-check-fill
               |  B.Sc. Software Engineering
 
-        .col-6.text-end.d-none.d-xxl-block
-          img.img-fluid.rounded src="#{image_path('portrait.png')}"
+        .col-12.col-lg-6.text-end.d-none.d-lg-block
+          img.img-fluid.img-thumbnail.rounded-image src="#{image_path('portrait.png')}"
+          / img.img-fluid.rounded-circle.d-block.mx-auto src="#{image_path('portrait.png')}"
+          h2
+            a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
+              i.px-1.bi.bi-linkedin
+
+      .row 
+        .col
+          h2.pb-3.text-start Projects
+          #projectAccordion.accordion
+            = partial(:project_item, :locals => { id: 1, title1: "Interim CTO @ Vemove GmbH", title2: "Transport-Management-System" }) do
+              | Conception and development of the vemove TMS for the efficient processing of vehicle transport orders. Mapping of logistical processes and integration of external systems. 
+              | Productive operation, hosting and error monitoring of the vemove TMS platform. 
+              | Communication and coordination between internal and external stakeholders.
+
+            = partial(:project_item, :locals => { id: 2, title1: "IT Project Manager @ ]init AG[ ", title2: "Elterngeld Digital" }) do
+              | (Teil) Projektleitung ElterngeldDigital - Digitalisierung deutscher Verwaltungsdienste im Kontext des Onlinezugangsgesetzes (OZG). 
+              | Koordination und Betreuung der Weiterentwicklung des XÖV Standards XFamilie zur Vereinheitlichung der Datenstrukturen (für die elektronische Kommunikation im Familienbereich). 
+              | Integration von OSCI/XTA2/DVDV und COM Despina in den Dienst ElterngeldDigital. 
+              | Stakeholder-Management von Bundes- und Landesministerien in Workshops und Gremien. 
+
+            = partial(:project_item, :locals => { id: 3, title1: "SW Developer @ Scheibner m-tec GmbH", title2: "Measurement-Expert-System" }) do
+              | Conception and development of a system for measuring and calculating the dimensional accuracy of e-bike and bicycle frames. 
+              | Automated generation of measurement protocols for test reports.
+ 
+            = partial(:project_item, :locals => { id: 4, title1: "SW Developer @ coVidGO.io", title2: "Corona-Warn-App Integration" }) do
+              | Connecting coVidGO with a microservice to the Corona-Warn-App (CWA) over the CWA server infrastructure.
+
+            = partial(:project_item, :locals => { id: 5, title1: "IT Project Manager @ Volkswagen AG", title2: "Preventive Maintenance Platform" }) do
+              | Developing a PM system which integrates the On-board diagnostics(OBD2) of fleet vehicles into a Fleet Maintenance Management System.
+              | Piloting the PM System with a large logistic fleet.
+
+            = partial(:project_item, :locals => { id: 6, title1: "IT Consultant @ FIEGE Logistik", title2: "Technical Due Diligence" }) do
+              | Technical Screening of the IT infrastructure and system-architecture of the “angelbringts” logistic platform. Advising a next step roadmap within a Technical Due Diligence.
+
+            = partial(:project_item, :locals => { id: 7, title1: "IT Consultant @ DPD (Schweiz) AG", title2: "Transport Management Platform" }) do
+              | After Exit of ImagineCargo to DPD-Schweiz in early 2020, Setup & Implementing the 
+              | IT-Infrastructure of ImagineCargo for a new pilot project of DPD.
 
     .page-section
       .row 
         .col
           .d-grid.gap-2.col-6.mx-auto
-            a.button.btn.btn-outline-primary href="mailto:hi@tschmid.io"
+            a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
               i.bi.bi-rocket-takeoff-fill
               |  Kostenlose Erstberatung 
               i.bi.bi-rocket-takeoff-fill
-
-
-/ hr[class="divider divider-right"]
-
-/ .page-section
-/   .row.justify-content-center.text-center
-/     .col-lg-8
-/       = partial 'partials/company_logo_carousel'
-
-/ hr[class="divider divider-right"]
-
-/ .page-section
-/   .row.justify-content-center.text-center
-/     .col
-/       .pb-3
-/         h1 Portfolio
-/       = partial 'partials/portfolio'
+    .d-none.d-lg-block
+      .py-5
+      .py-5
