@@ -6,12 +6,12 @@
   .col-12.col-xl-7
     .page-section
       .row.py-5.text-start
-        .d-lg-none
-          .col-12.pb-5
-            img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
-            h2.text-end
-              a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
-                i.px-1.bi.bi-linkedin
+        / .d-lg-none
+        /   .col-12.pb-5
+        /     img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
+        /     h2.text-end
+        /       a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
+        /         i.px-1.bi.bi-linkedin
         .col-12.col-lg-6
           
           h1 Tobias Schmid 
@@ -30,10 +30,12 @@
               i.bi.bi-patch-check-fill
               |  B.Sc. Software Engineering
 
-        .col-12.col-lg-6.text-end.d-none.d-lg-block
-          img.img-fluid.img-thumbnail.rounded-image src="#{image_path('portrait.png')}"
+        .col-12.col-lg-6.order-first.order-lg-1
+          / .d-none.d-lg-block
+          img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
+          / img.img-fluid.img-thumbnail.rounded-image src="#{image_path('portrait.png')}"
           / img.img-fluid.rounded-circle.d-block.mx-auto src="#{image_path('portrait.png')}"
-          h2
+          h2.text-end
             a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
               i.px-1.bi.bi-linkedin
 
