@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - name: build website
-        run: bin/build
+        run: ./bin/build
       - name: Cloning repo
         uses: actions/checkout@v4
         with:
