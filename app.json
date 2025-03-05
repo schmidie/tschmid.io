@@ -2,7 +2,7 @@
   "name": "TSchmid.io",
   "scripts": {
     "dokku": {
-      "postdeploy": "bundle exec middleman build --verbose"
+      "postdeploy": "gem install middleman && bundle exec middleman build --verbose"
     }
   }
 }
