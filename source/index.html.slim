@@ -32,30 +32,27 @@
 
         .col-12.col-lg-6.order-first.order-lg-1
           / .d-none.d-lg-block
-          img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
+          img.img-fluid src="#{image_path('portrait.png')}"
           / img.img-fluid.img-thumbnail.rounded-image src="#{image_path('portrait.png')}"
           / img.img-fluid.rounded-circle.d-block.mx-auto src="#{image_path('portrait.png')}"
           h2.text-end
             a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
               i.px-1.bi.bi-linkedin
 
-      / .row
-      /   .col
-      /     h3 Hi, I'm Tobias Schmid,
-
-      /     | a 
-      /     b Software Engineer, Technical Project Manager and IT Consultant 
-      /     | with over 
-      /     b 14 years experience 
-      /     | in web & software projects. 
+      .row.pb-5
+        .col.text-start
+          h4 Hi, I'm Tobias Schmid,
+          | a 
+          b Software Engineer, Technical Project Manager and IT Consultant 
+          | with over 
+          b 14 years experience 
+          | in web & software projects. 
+          | Since 2019 I have worked as a freelancer and built together with various customers (startups, SMEs, corporates & the public sector) some amazing digital products, covering complex transport management systems, marketplaces, super fast APIs, digital services and many more. 
           
-      /     | Since 2019 I have worked as a freelancer and built together with various customers (startups, SMEs, corporates & the public sector) some amazing digital products, covering complex transport management systems, marketplaces, super fast APIs, digital services and many more. 
-          
-      / .page-section
-
       .row 
         .col
-          h2.pb-3.text-start Projects
+          .pb-3
+            h2.text-start A selection of my freelance projects
           #projectAccordion.accordion
             = partial(:project_item, :locals => { id: 1, title1: "Interim CTO @ Vemove GmbH", title2: "Transport-Management-System" }) do
               | Conception and development of the vemove TMS for the efficient processing of vehicle transport orders. Mapping of logistical processes and integration of external systems. 
@@ -86,14 +83,14 @@
               | After Exit of ImagineCargo to DPD-Schweiz in early 2020, Setup & Implementing the 
               | IT-Infrastructure of ImagineCargo for a new pilot project of DPD.
 
-    .page-section
-      .row 
-        .col
-          .d-grid.gap-2.col-12.col-lg-6.mx-auto
-            a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
-              i.bi.bi-rocket-takeoff-fill
-              |  Kostenlose Erstberatung 
-              i.bi.bi-rocket-takeoff-fill
+    / .page-section
+    /   .row 
+    /     .col
+    /       .d-grid.gap-2.col-12.col-lg-6.mx-auto
+    /         a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
+    /           i.bi.bi-rocket-takeoff-fill
+    /           |  Kostenlose Erstberatung 
+    /           i.bi.bi-rocket-takeoff-fill
     .d-none.d-lg-block
       .py-5
       .py-5
