@@ -53,13 +53,16 @@
         .col
           .pb-3
             h2.text-start A selection of my freelance projects
-          #projectAccordion.accordion
+          #projectAccordion.accordion.text-start
             = partial(:project_item, :locals => { id: 1, title1: "Interim CTO @ Vemove GmbH", title2: "Transport-Management-System" }) do
               | Conception and development of the vemove TMS for the efficient processing of vehicle transport orders. Mapping of logistical processes and integration of external systems. 
               | Productive operation, hosting and error monitoring of the vemove TMS platform. 
               | Communication and coordination between internal and external stakeholders.
 
             = partial(:project_item, :locals => { id: 2, title1: "IT Project Manager @ ]init AG[ ", title2: "Elterngeld Digital" }) do
+              | Building digital services for Germany.
+              br
+              br
               | (Teil) Projektleitung ElterngeldDigital - Digitalisierung deutscher Verwaltungsdienste im Kontext des Onlinezugangsgesetzes (OZG). 
               | Koordination und Betreuung der Weiterentwicklung des XÖV Standards XFamilie zur Vereinheitlichung der Datenstrukturen (für die elektronische Kommunikation im Familienbereich). 
               | Integration von OSCI/XTA2/DVDV und COM Despina in den Dienst ElterngeldDigital. 
