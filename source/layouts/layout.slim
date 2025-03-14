@@ -13,13 +13,18 @@ html
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
     = favicon_tag "images/favicon.ico"
-    script[async src="https://www.googletagmanager.com/gtag/js?id=G-F2N9H0REGE"]
-    script
+
+    / Google Analytics
+    script[ async src="https://www.googletagmanager.com/gtag/js?id=G-F2N9H0REGE" type="text/plain" data-type="application/javascript" data-name="google-analytics"]
+    script [ type="text/plain" data-type="application/javascript" data-name="google-analytics"]
       | window.dataLayer = window.dataLayer || []; 
       | function gtag(){dataLayer.push(arguments);} 
       | gtag('js', new Date()); 
       | gtag('config', 'G-F2N9H0REGE'); 
 
+    / consent management with klaro
+    = javascript_include_tag "klaro.config"
+    = javascript_include_tag "klaro"
 
   body.min-vh-100.d-flex.flex-column
     .d-lg-none
@@ -32,7 +37,8 @@ html
           = yield
     
     .page-section
-      .d-lg-none
-        = partial 'partials/footer_mobile'
-      .d-none.d-lg-block
-        = partial 'partials/footer'
+    / .d-lg-none
+    /   = partial 'partials/footer_mobile'
+    / .d-none.d-lg-block
+    /   = partial 'partials/footer'
+    = partial 'partials/footer'
