@@ -46,7 +46,7 @@ groupByPurpose: false,
 autoFocus: false,
 
 // You can show a title in the consent notice by enabling the following option
-showNoticeTitle: true,
+showNoticeTitle: false,
 
 // How Klaro should store the user's preferences. It can be either 'cookie'
 // (the default) or 'localStorage'.
@@ -229,7 +229,7 @@ lang: 'en',
         // If "optOut" is set to true, Klaro will load this service even before
         // the user gave explicit consent.
         // We recommend always leaving this "false".
-        optOut: false,
+        optOut: true,
         // If "onlyOnce" is set to true, the service will only be executed
         // once regardless how often the user toggles it on and off.
         // onlyOnce: false,

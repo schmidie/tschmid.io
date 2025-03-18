@@ -23,8 +23,8 @@ html
       | gtag('config', 'G-F2N9H0REGE'); 
 
     / consent management with klaro
-    = javascript_include_tag "klaro.config"
-    = javascript_include_tag "klaro"
+    = javascript_include_tag "klaro.config", defer: true
+    = javascript_include_tag "klaro", defer: true
 
   body.min-vh-100.d-flex.flex-column
     .d-lg-none
