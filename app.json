@@ -2,7 +2,7 @@
   "name": "TSchmid.io",
   "scripts": {
     "dokku": {
-      "predeploy": ""
+      "predeploy": "bin/build"
     }
   }
 }
