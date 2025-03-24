@@ -2,7 +2,7 @@
   "name": "TSchmid.io",
   "scripts": {
     "dokku": {
-      "predeploy": "bundle exec middleman build --verbose"
+      "postdeploy": "bundle exec middleman build --verbose"
     }
   }
 }
