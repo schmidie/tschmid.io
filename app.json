@@ -2,7 +2,7 @@
   "name": "TSchmid.io",
   "scripts": {
     "dokku": {
-      "predeploy": "middleman build"
+      "predeploy": "sh middleman build"
     }
   }
 }
