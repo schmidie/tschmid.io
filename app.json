@@ -2,7 +2,7 @@
   "name": "TSchmid.io",
   "scripts": {
     "dokku": {
-      "postdeploy": "bin/build"
+      "predeploy": "bin/build"
     }
   }
 }
