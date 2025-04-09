@@ -5,7 +5,7 @@
 .row.justify-content-md-center
   .col-12.col-xl-7
     .page-section
-      .row.py-5.text-start
+      .row.pt-5.text-start
         / .d-lg-none
         /   .col-12.pb-5
         /     img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
@@ -14,21 +14,45 @@
         /         i.px-1.bi.bi-linkedin
         .col-12.col-lg-6
           
-          h1 Tobias Schmid 
-          h1.text-primary building digital products.
+          / h1 Tobias Schmid 
+          / h1.text-primary building digital products.
 
-          .py-5.text-secondary
-            h3 > Software Engineering 
-            h3 > IT Project Management
-            h3 > IT Consulting 
+          / .py-5.text-secondary
+          /   h3 > Software Engineering 
+          /   h3 > IT Project Management
+          /   h3 > IT Consulting 
+
+          .py-5.text-start
+            / h4 Tobias Schmid,
+            
+            h4.text-primary Freelance IT Produkt Manager 
+            h4.text-primary & Consultant 
+            div 
+              b with developer and founder background.  
+            
+            br
+            / b Software Engineer, Technical Project Manager and IT Consultant 
+            div
+              | I have more than 
+              b 14 years experience 
+              | in web & software projects. 
+            br
+            div 
+              | I help companies with 
+              b digital transformation 
+              | challenges with a focus on agile product management and IT consulting.
           
-          .py-2.text-secondary
-            h4
-              i.bi.bi-patch-check-fill
-              |  M.Sc. Informatik
-            h4
-              i.bi.bi-patch-check-fill
-              |  B.Sc. Software Engineering
+            br
+            div
+              | If you are looking for some IT 
+              b professional 
+              | with 
+              b strong technical knowlegde 
+              | and a 
+              b hands-on mentality
+              | , I would love to hear from you!
+          
+          
 
         .col-12.col-lg-6.order-first.order-lg-1
           / .d-none.d-lg-block
@@ -37,47 +61,108 @@
           / img.img-fluid.rounded-circle.d-block.mx-auto src="#{image_path('portrait.png')}"
           h2.text-end
             a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
-              i.px-1.bi.bi-linkedin
+              i.px-1.bi.bi-linkedin              
 
-      .row.pb-5
-        .col.text-start
-          h4 Hi, I'm Tobias Schmid,
-          | a 
-          b Software Engineer, Technical Project Manager and IT Consultant 
-          | with over 
-          b 14 years experience 
-          | in web & software projects. 
-          | Since 2019 I have worked as a freelancer and built together with various customers (startups, SMEs, corporates & the public sector) some amazing digital products, covering complex transport management systems, marketplaces, super fast APIs, digital services and many more. 
+      / .row.pb-5
+      /   .col.text-start
+      /     h4 Hi, I'm Tobias Schmid,
+      /     | a 
+      /     b Software Engineer, Technical Project Manager and IT Consultant 
+      /     | with over 
+      /     b 14 years experience 
+      /     | in web & software projects. 
+      /     | Since 2019 I have worked as a freelancer and built together with various customers (startups, SMEs, corporates & the public sector) some amazing digital products, covering complex transport management systems, marketplaces, super fast APIs, digital services and many more. 
           
       .row 
-        .col
-          .pb-3
-            h2.text-start A selection of my freelance projects
+        / .col-12
+        /   hr.divider
+        /   .pb-5
+        .col-12.col-lg-6.text-start.pt-3
+          / .border.border-secondary.p-5
+          .card.h-100
+            .card-body
+              h4.card-title TOP SKILLS
+              .card-text
+                .py-2
+                  div Agile / Scrum
+                  div Stakeholder Management
+                  div Software Development Process / Software Engineering
+                  div Interfaces (REST-API, Webhook)
+                  div Jira, Confluence, Gitlab, Github
+
+        .col-12.col-lg-6.text-start.pt-3
+          / .border.border-secondary.p-5
+          .card.h-100
+            .card-body
+              h4.card-title EDUCATION  
+              .card-text
+                .py-2
+                  div
+                    | Freie Universität Berlin
+                  div 
+                    b Master of Science 
+                    | (grade: 1,7)
+                  div
+                    | Informatik, 2011-2015
+
+                .py-2 
+
+                  div
+                    | Hochschule Konstanz
+                  div 
+                    b Bachelor of Science 
+                    | (grade: 1,9)
+                  div 
+                    | Software Engineering, 2007-2011
+
+      .row 
+        .col.pt-5
+          / .py-5
+          /   hr.divider
+          .pb-5.text-start
+            h2 A selection of my freelance projects
           #projectAccordion.accordion.text-start
             = partial(:project_item, :locals => { id: 1, title1: "Interim CTO @ Vemove GmbH", title2: "Transport-Management-System" }) do
-              | Conception and development of the vemove TMS for the efficient processing of vehicle transport orders. Mapping of logistical processes and integration of external systems. 
-              | Productive operation, hosting and error monitoring of the vemove TMS platform. 
-              | Communication and coordination between internal and external stakeholders.
+              | Conception and development of a transportation management system (TMS) for the eﬃcient processing of vehicle transport orders.
+              br
+              br
+              | > Digitalization and automation of previously manual business processes.
+              br
+              | > Mapping of logistics processes and integration of external systems.
+              br
+              | > Communication and coordination between the team and external stakeholders.
+              br
+              | > We achieved a automated processing of over 4k orders / month with the TMS.
 
             = partial(:project_item, :locals => { id: 2, title1: "IT Project Manager @ ]init AG[ ", title2: "Elterngeld Digital" }) do
               | Building digital services for Germany.
               br
-              br
-              | (Teil) Projektleitung ElterngeldDigital - Digitalisierung deutscher Verwaltungsdienste im Kontext des Onlinezugangsgesetzes (OZG). 
-              | Koordination und Betreuung der Weiterentwicklung des XÖV Standards XFamilie zur Vereinheitlichung der Datenstrukturen (für die elektronische Kommunikation im Familienbereich). 
-              | Integration von OSCI/XTA2/DVDV und COM Despina in den Dienst ElterngeldDigital. 
-              | Stakeholder-Management von Bundes- und Landesministerien in Workshops und Gremien. 
 
-            = partial(:project_item, :locals => { id: 3, title1: "SW Developer @ Scheibner m-tec GmbH", title2: "Measurement-Expert-System" }) do
+              | Project Management of challenging projects for the Federal Ministry of Family Affairs (Bundesfamilienministerium) for the digital transformation of administrative services.
+              br
+              br
+              | > Management of the teams to achieve the milestones (waterfall - scrum combination).
+              br
+              | > Stakeholder management of representatives from federal and state ministries in workshops and committees.
+              br
+              | > Coordination and supervision of the further development of the XÖV standard XFamilie for the 
+              | standardization of data structures (for digital communication in the family sector).
+              br
+              | > Integration of OSCI/XTA2/DVDV and COM Despina into the Elterngeld Digital service.
+
+            = partial(:project_item, :locals => { id: 3, title1: "IT Consultant @ Scheibner m-tec GmbH", title2: "Measurement-Expert-System" }) do
               | Conception and development of a system for measuring and calculating the dimensional accuracy of e-bike and bicycle frames. 
               | Automated generation of measurement protocols for test reports.
  
-            = partial(:project_item, :locals => { id: 4, title1: "SW Developer @ coVidGO.io", title2: "Corona-Warn-App Integration" }) do
+            = partial(:project_item, :locals => { id: 4, title1: "IT Consultant @ coVidGO.io", title2: "Corona-Warn-App Integration" }) do
               | Connecting coVidGO with a microservice to the Corona-Warn-App (CWA) over the CWA server infrastructure.
 
-            = partial(:project_item, :locals => { id: 5, title1: "IT Manager & Developer @ Volkswagen AG", title2: "Preventive Maintenance Platform" }) do
+            = partial(:project_item, :locals => { id: 5, title1: "IT Produkt Manager & Consultant @ Volkswagen AG", title2: "Preventive Maintenance Platform" }) do
               | Developing a PM system which integrates the On-board diagnostics(OBD2) of fleet vehicles into a Fleet Maintenance Management System.
               | Piloting the PM System with a large logistic fleet.
+              br
+              | Generation of important market information about fleet maintenance for the VW 
+              | Commercial Vehicles Group and the Smart Mobility and Transport Team.
 
             = partial(:project_item, :locals => { id: 6, title1: "IT Consultant @ FIEGE Logistik", title2: "Technical Due Diligence" }) do
               | Technical Screening of the IT infrastructure and system-architecture of the “angelbringts” logistic platform. Advising a next step roadmap within a Technical Due Diligence.
@@ -86,14 +171,24 @@
               | After Exit of ImagineCargo to DPD-Schweiz in early 2020, Setup & Implementing the 
               | IT-Infrastructure of ImagineCargo for a new pilot project of DPD.
 
-    / .page-section
-    /   .row 
-    /     .col
-    /       .d-grid.gap-2.col-12.col-lg-6.mx-auto
-    /         a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
-    /           i.bi.bi-rocket-takeoff-fill
-    /           |  Kostenlose Erstberatung 
-    /           i.bi.bi-rocket-takeoff-fill
-    .d-none.d-lg-block
-      .py-5
-      .py-5
+      / .row 
+      /   .col
+      /     .py-5
+      /       hr.divider
+      /     .pb-3
+      /       h2 Work Experience
+      /     #projectAccordion.accordion.text-start
+      /       = partial(:project_item, :locals => { id: 1, title1: "TODO", title2: "TODO" }) do
+      /         | TODO
+              
+    .page-section
+      .row 
+        .col
+          .d-grid.gap-2.col-12.col-lg-6.mx-auto
+            a.button.btn.btn-primary href="mailto:hi@tschmid.io"
+              i.bi.bi-rocket-takeoff-fill
+              |  start something great 
+              i.bi.bi-rocket-takeoff-fill
+    / .d-none.d-lg-block
+      / .py-5
+      / .py-5
