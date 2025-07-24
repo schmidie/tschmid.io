@@ -25,21 +25,23 @@
           .py-5.text-start
             / h4 Tobias Schmid,
             
-            h2.text-primary Freelance IT Product Manager 
-            h2.text-primary & Consultant 
-            h4 with developer and founder background.  
+            h2.text-primary Freelance IT Consultant 
+            h2.text-primary & Technical Project Manager
             
             br
             / b Software Engineer, Technical Project Manager and IT Consultant 
             div
-              | I have more than 
+              | With more than 
               b 14 years experience 
-              | in web & software projects. 
+              | in web & software projects, 
             br
             div 
-              | I help companies with 
+              | I help companies and the public sector with 
               b digital transformation 
-              | challenges with a focus on agile product management and IT consulting.
+              | challenges with a focus on 
+              b system integrations 
+              | and 
+              b interfaces.
           
             br
             div
@@ -81,38 +83,42 @@
           .card.h-100
             .card-body
               h4.card-title TOP SKILLS
-              .card-text
-                .py-2
-                  div Agile / Scrum
-                  div Stakeholder Management
-                  div Software Development Process / Software Engineering
-                  div Interfaces (REST-API, Webhook)
-                  div Jira, Confluence, Gitlab, Github
+              .card-text.pt-4
+                  div.list-group
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" IT Project Management
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Stakeholder Management
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Requirements Engineering
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Software Engineering
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" System Architectures
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Complex System Integrations
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Interfaces (REST-API, Webhook)
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Jira, Confluence, Gitlab, Github
+                    a.list-group-item.list-group-item-action.list-group-item-light href="#" Agile / Scrum
 
         .col-12.col-lg-6.text-start.pt-3
           / .border.border-secondary.p-5
           .card.h-100
             .card-body
               h4.card-title EDUCATION  
-              .card-text
-                .py-2
-                  div
-                    | Freie Universität Berlin
-                  div 
-                    b Master of Science 
-                    | (grade: 1,7)
-                  div
-                    | Informatik, 2011-2015
+              .card-text.pt-4
+                div.list-group
+                  div.list-group-item.list-group-item-action.list-group-item-light
+                    .py-2
+                      div
+                        | Freie Universität Berlin
+                      div 
+                        b Master of Science
+                      div
+                        | Informatik, 2011-2015
+                  div.list-group-item.list-group-item-action.list-group-item-light
+                    .py-2 
 
-                .py-2 
-
-                  div
-                    | Hochschule Konstanz
-                  div 
-                    b Bachelor of Science 
-                    | (grade: 1,9)
-                  div 
-                    | Software Engineering, 2007-2011
+                      div
+                        | Hochschule Konstanz
+                      div 
+                        b Bachelor of Science
+                      div 
+                        | Software Engineering, 2007-2011
 
       .row 
         .col.pt-5
@@ -131,7 +137,7 @@
               br
               | > Communication and coordination between the team and external stakeholders.
               br
-              | > We achieved a automated processing of over 4k orders / month with the TMS.
+              | > Company scaling through the developed TMS in shortest time.
 
             = partial(:project_item, :locals => { id: 2, title1: "IT Project Manager @ ]init AG[ ", title2: "Elterngeld Digital" }) do
               | Building digital services for Germany.
