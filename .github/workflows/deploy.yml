@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Push to dokku
-        uses: dokku/github-action
+        uses: dokku/github-action@master
         with:
           branch: 'main'
           git_remote_url: 'ssh://dokku@46.38.254.73:22/tschmid.io'
