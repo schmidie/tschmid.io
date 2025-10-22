@@ -1,11 +1,16 @@
 .accordion-item
   h2.accordion-header
     button.accordion-button.collapsed[type="button" data-bs-toggle="collapse" data-bs-target="#ProjectItem#{id}" aria-expanded="false" aria-controls="ProjectItem#{id}"]
-      = title1
-      .px-2
-        / i.bi.bi-arrow-right
-        i.bi.bi-rocket-takeoff
-      = title2
+      / TODO: is this correct in bootstrap grid
+      .row
+        i.bi class="bi-#{icon}"
+        / TODO: does not work good on mobile
+        .px-3
+      .row
+        div
+          b= title1
+        div
+          = title2
   .accordion-collapse.collapse[id="ProjectItem#{id}"]
     .accordion-body
       = yield
