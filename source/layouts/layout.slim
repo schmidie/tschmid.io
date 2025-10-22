@@ -26,17 +26,17 @@ html
     = javascript_include_tag "klaro.config", defer: true
     = javascript_include_tag "klaro", defer: true
 
-  body.min-vh-100.d-flex.flex-column
+  body.min-vh-100.d-flex.flex-column.bg-body
     .d-lg-none
       = partial 'partials/navbar_mobile'
-    .d-none.d-lg-block
-      = partial 'partials/navbar'
+    / .d-none.d-lg-block
+    /   = partial 'partials/navbar'
+    .page-section
     .container.flex-grow-1
       .row.justify-content-center.text-center
         .col
           = yield
-    
-    .page-section
+          
     / .d-lg-none
     /   = partial 'partials/footer_mobile'
     / .d-none.d-lg-block
