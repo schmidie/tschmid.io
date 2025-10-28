@@ -13,9 +13,15 @@ $btn-padding-y: 0.6em;
 $btn-padding-x: 1.4em;
 $nav-link-font-weight: bold;
 
+// Accordion
 $accordion-button-active-bg: #fff; //$secondary;
 // $accordion-button-active-color: #fff;
+// NOTE: enable again when we have the content stuff
+$accordion-button-icon:         none;
+$accordion-button-active-icon:  none;
 
+
+// Highlight without HX
 $display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
@@ -24,10 +30,5 @@ $display-font-sizes: (
   5: 3rem,
   6: 2.5rem,
   7: 2rem,
-  8: 1.5rem,
-  9: 1.25rem
+  8: 1.5rem
 );
-
-// .accordion-button{
-//     display:block;
-// }

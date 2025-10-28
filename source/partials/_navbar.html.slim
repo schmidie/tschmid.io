@@ -1,20 +1,10 @@
 nav#mainNav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.py-2
-  / .container-fluid.px-4.px-lg-5
-
-  /   .text-start
-  /     h4.text-secondary
-  /       a.button.btn.btn-outline-secondary href="tel:+491791451810"
-  /         i.bi.bi-telephone-fill
-  /         b= " +49 179 145 181 0"
-    
-  /   h4
-  /     a.button.btn.btn-outline-secondary href="https://calendly.com/hi-tschmid/kennenlernen" target='_blank'
-  /       b 
-  /         i.bi.bi-calendar-check
-  /       b= " Kostenloses Erstgespräch"
-
-  /   .text-end
-  /     h4
-  /       a.button.btn.btn-outline-secondary href="mailto:hi@tschmid.io"
-  /         i.bi.bi-envelope-fill
-  /         b= " hi@tschmid.io"
+  .container.d-flex.justify-content-between
+    a.navbar-brand.text-secondary href="/"
+      i.px-3.bi.bi-circle-fill.text-primary
+      | tschmid.io
+    h4
+      a.button.btn.btn-outline-secondary href="https://calendly.com/hi-tschmid/kennenlernen" target='_blank'
+        b 
+          i.bi.bi-calendar-check
+        b= " Kostenloses Erstgespräch"

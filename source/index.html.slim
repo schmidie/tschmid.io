@@ -6,21 +6,21 @@
   .col-12.col-xl-9
     .page-section
       .row.pt-5.text-start
-        .col-12.col-lg-6.pt-5
-          .py-5.text-start
-
-            / h4 ECHTE UNTERNEHMENSEFFIZIENZ
-            / h4 UNTERNEHMENSEFFIZIENZ
-            h4 DIGITAL EFFIZIENT
+        .d-none.d-lg-block
+          / on desktop we want more space
+          .page-section
+        .col-12.col-lg-7
+          .pt-5.text-start
+            h1 DIGITAL EFFIZIENT
           
             div.py-3
-              h5 
+              h4 
                 i.px-1.bi.bi-check
                 | Durch integrierte Systeme 
-              h5 
+              h4 
                 i.px-1.bi.bi-check
                 | Schnittstellen
-              h5
+              h4
                 i.px-1.bi.bi-check 
                 | und clevere Automatisierungen 
             
@@ -34,39 +34,55 @@
                 i.px-3.bi.bi-headset
                 | kostenloses Effizienzgespräch buchen 
           
-        .col-12.col-lg-6.order-first.order-lg-1
+        .col-12.col-lg-5.order-first.order-lg-1
           img.img-fluid src="#{image_path('portrait.jpeg')}"  
+
+    
 
     .page-section
       .row.pb-3
         .col.text-start
-          h4 KENNST DU DAS ?
+          h4 
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | KENNST DU DAS ?
           / h4 KENNST DU ETWAS DAVON ?
       .row 
         .col-12.text-start.pt-3
 
-          .display-9.pb-2
-            i.px-3.bi.bi-arrow-right
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
             | Informationen sind verteilt: zwischen E-mail Postfächern, Excel Tabellen und verschiedenen Systemen
-          .display-9.pb-2
-            i.px-3.bi.bi-arrow-right
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
             | Informationen sind nicht digitalisiert
-          .display-9.pb-2 
-            i.px-3.bi.bi-arrow-right
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
             | Die Abläufe im Backoffice sind mühsam und manuell
-          .display-9.pb-2 
-            i.px-3.bi.bi-arrow-right
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
             | Die Kommunikation mit Kunden und Partnern ist aufwendig: viele E-Mail Schleifen und Telefonate
-          .display-9.pb-2 
-            i.px-3.bi.bi-arrow-right
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
             | Produkte oder Produktteile sind nicht selbsterklärend und intuitiv zu benutzen
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Der Funktionsumfang bestehender Systeme deckt die eigenen Anforderungen nicht ausreichend ab
           
-          | Dann sollten wir sprechen ...
+          .pt-4
+            b
+              i.px-3.bi.bi-arrow-right
+              | Dann sollten wir sprechen ...
+
+    
 
     .page-section
       .row.pb-3
         .col.text-start
-          h4 IN 3 SCHRITTEN ZU MEHR UNTERNEHMENSEFFIZIENZ
+          h4 
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | IN 3 SCHRITTEN ZU MEHR UNTERNEHMENSEFFIZIENZ
       .row 
         / .col-12
         /   hr.divider
@@ -76,8 +92,8 @@
           .card.h-100
             / img src="#{image_path('erstgespraech_logo.png')}" class="card-img-top" alt="..."
             / img src="#{image_path('headset.svg')}" class="card-img-top pt-2" alt="..."
-            .card-body
-              .display-7.card-title 
+            .card-body.pt-5
+              .display-8.card-title 
                 i.px-3.bi.bi-headset
                 | Effizienzgespräch
               .card-text.pt-4
@@ -90,8 +106,8 @@
           / .border.border-secondary.p-5
           .card.h-100
             / img src="#{image_path('lightbulb.svg')}" class="card-img-top pt-2" alt="..."
-            .card-body
-              .display-7.card-title 
+            .card-body.pt-5
+              .display-8.card-title 
                 i.px-3.bi.bi-lightbulb
                 | Strategie Entwicklung
               .card-text.pt-4
@@ -99,58 +115,68 @@
         .col-12.col-lg-4.text-start.pt-3
           / .border.border-secondary.p-5
           .card.h-100
-            .card-body
-              .display-7.card-title  
+            .card-body.pt-5
+              .display-8.card-title  
                 i.px-3.bi.bi-gear-wide-connected
                 | Umsetzung
               .card-text.pt-4
                 | Gemeinsam setzen wir deine Maßnahmen um - für deinen Effizienz-Boost. Je nach deiner aktuellen Situation führen wir neue Systeme ein, integrieren sie in deine Abläufe, digitalisieren und automatisieren Prozesse, entwickeln maßgeschneiderte digitale Anwendungen oder unterstützen deine Abläufe durch KI.
 
-    .page-section
-      .row.pb-3
-        .col.text-start
-          h4 EGAL WO DU STEHST
-          / h4 EGAL AUF WELCHEM EFFIZIENZ LEVEL DU AKTUELL STEHST
-      .row 
-        .col-12.text-start
-          p.pb-3 gemeinsam entwickeln wir passgenau zu deiner aktuellen Situation einen Strategie-Plan für mehr Effizienz.
-
-          .display-9
-            / button type="button" class="btn btn-primary p-1"
-            / i.px-3.bi.bi-person-arms-up
-            i.px-3.bi.bi-circle
-            | Alles Manuell - Keine Digitalisierung
-          .display-9
-            i.px-3.bi.bi-three-dots-vertical
-          .display-9
-            / i.px-3.bi.bi-display
-            i.px-3.bi.bi-circle
-            | Digitale Systeme sind eingeführt
-          .display-9
-            i.px-3.bi.bi-three-dots-vertical
-          .display-9
-            / i.px-3.bi.bi-gear
-            i.px-3.bi.bi-circle
-            | Prozesse sind effizient, digital & optimiert
-          .display-9
-            i.px-3.bi.bi-three-dots-vertical
-          .display-9
-            / icon: magic, patch-check, list-check
-            / i.px-3.bi.bi-list-check
-            i.px-3.bi.bi-circle
-            | Prozesse sind automatisiert
-          .display-9
-            i.px-3.bi.bi-three-dots-vertical
-          .display-9
-            / icon: openai
-            / i.px-3.bi.bi-magic
-            i.px-3.bi.bi-circle
-            | Systeme & Prozesse sind durch KI unterstützt
     
+
+    / .page-section
+    /   .row.pb-3
+    /     .col.text-start
+    /       h4 
+    /         i.bi.bi-play-circle.text-primary
+    /         span.px-2
+    /         | EGAL WO DU STEHST
+    /       / h4 EGAL AUF WELCHEM EFFIZIENZ LEVEL DU AKTUELL STEHST
+    /   .row 
+    /     .col-12.text-start
+    /       p.pb-3 gemeinsam entwickeln wir passgenau zu deiner aktuellen Situation einen Strategie-Plan für mehr Effizienz.
+
+    /       .display-9
+    /         / button type="button" class="btn btn-primary p-1"
+    /         / i.px-3.bi.bi-person-arms-up
+    /         i.px-3.bi.bi-circle
+    /         | Alles Manuell - Keine Digitalisierung
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / i.px-3.bi.bi-display
+    /         i.px-3.bi.bi-circle
+    /         | Digitale Systeme einführen
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / i.px-3.bi.bi-gear
+    /         i.px-3.bi.bi-circle
+    /         | Prozesse optimieren - effizient & digital 
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / icon: magic, patch-check, list-check
+    /         / i.px-3.bi.bi-list-check
+    /         i.px-3.bi.bi-circle
+    /         | Prozesse automatisieren
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / icon: openai
+    /         / i.px-3.bi.bi-magic
+    /         i.px-3.bi.bi-circle
+    /         | Systeme & Prozesse durch KI unterstützen
+          
+    
+
     .page-section
       .row.pb-3
         .col.text-start
-          h4 DEIN GEWINN
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | DEIN GEWINN
           / h4 KENNST DU ETWAS DAVON ?
       .row 
         .col-12.text-start
@@ -171,10 +197,14 @@
             | Unternehmenseffizienz und mehr Gewinn
 
     
+
     .page-section
       .row.pb-3
         .col.text-start
-          h4 ÜBER MICH
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | ÜBER MICH
           / h4 KENNST DU ETWAS DAVON ?
       .row 
         .col-12.col-lg-9.text-start.pt-3
@@ -216,45 +246,16 @@
                 div
                   a.card-link.text-secondary href="https://www.linkedin.com/in/tobias-schmid/" target="_blank"
                     | -> Meine Berufserfahrung
-
-
-
-
-
-          / .card.h-100
-          /   .card-body
-          /     h4.card-title  
-          /     .card-text.pt-4
-          /       div.list-group
-          /         div.list-group-item.list-group-item-action.list-group-item-light
-          /           .py-2 
-                      
-          /         div.list-group-item.list-group-item-action.list-group-item-light
-          /           .py-2
-          /             div
-          /               | Freie Universität Berlin
-          /             div 
-          /               b 
-          /                 i.bi.bi-award
-          /                 = " Master of Science"
-          /             div
-          /               | Informatik
-          /         div.list-group-item.list-group-item-action.list-group-item-light
-          /           .py-2 
-
-          /             div
-          /               | Hochschule Konstanz
-          /             div 
-          /               b 
-          /                 i.bi.bi-award
-          /                 =" Bachelor of Science"
-          /             div 
-          /               | Software Engineering
     
+    
+
     .page-section
       .row.pb-3
         .col.text-start
-          h4 EINE AUSWAHL AN ERFOLGSGESCHICHTEN
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | EINE AUSWAHL AN ERFOLGSGESCHICHTEN
       .row 
         .col.pt-5
           #projectAccordion.accordion.text-start
