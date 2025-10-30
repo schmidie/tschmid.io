@@ -1,16 +1,18 @@
 / footer.fixed-bottom.bg-dark.py-5
-footer.min-vh-100.bg-dark.py-5
+footer.min-vh-100.bg-light.py-5
   .container.px-4.px-lg-5
     .pb-3
-      .small.text-center.text-light
-        a IMPRINT
-        div Tobias Schmid
-        div Treptower Str 92
+      .small.text-center
+        .pb-3
+          a IMPRINT
+        div M.Sc. Tobias Schmid
+        div Freiberuflicher IT Berater und Software Engineer
+        div.pt-3 Treptower Str 92
         div 12059 Berlin
         div 
           | E-Mail: 
           = link_to "hi@tschmid.io", "mailto:hi@tschmid.io"
-    .small.text-center.text-light
+    .small.text-center
       div
         |  Copyright © 
         = Time.now.year

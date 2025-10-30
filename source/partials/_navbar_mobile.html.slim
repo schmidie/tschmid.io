@@ -1,15 +1,22 @@
 nav#mainNav.navbar.navbar-expand.navbar-light.bg-body-tertiary.fixed-top.py-2
-  .container-fluid.px-4.px-lg-5
+  / .container-fluid.px-4.px-lg-5
 
-    .text-start
-      a.button.btn.btn-outline-dark href="tel:+491791451810"
-        i.bi.bi-telephone-fill
+  /   .text-start
+  /     a.button.btn.btn-outline-dark href="tel:+491791451810"
+  /       i.bi.bi-telephone-fill
 
-    a.navbar-brand.text-center[href="/"]
-      | Tobias Schmid 
-      br
+  /   a.button.btn.btn-outline-secondary href="https://calendly.com/hi-tschmid/kennenlernen" target='_blank'
+  /     i.bi.bi-calendar
+
+  /   .text-end
+  /     a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
+  /       i.bi.bi-envelope-fill
+
+
+  .container.d-flex.justify-content-between
+    a.navbar-brand.text-secondary href="/"
+      i.px-3.bi.bi-circle-fill.text-primary
       | tschmid.io
-
-    .text-end
-      a.button.btn.btn-outline-dark href="mailto:hi@tschmid.io"
-        i.bi.bi-envelope-fill
+    h4
+      a.text-secondary href="https://calendly.com/hi-tschmid/effizienzgespraech" target='_blank'
+        i.bi.bi-calendar

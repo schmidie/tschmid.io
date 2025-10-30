@@ -1,11 +1,19 @@
 .accordion-item
   h2.accordion-header
-    button.accordion-button.collapsed[type="button" data-bs-toggle="collapse" data-bs-target="#ProjectItem#{id}" aria-expanded="false" aria-controls="ProjectItem#{id}"]
-      = title1
-      .px-2
-        / i.bi.bi-arrow-right
-        i.bi.bi-rocket-takeoff
-      = title2
+    / button.accordion-button.collapsed[type="button" data-bs-toggle="collapse" data-bs-target="#ProjectItem#{id}" aria-expanded="false" aria-controls="ProjectItem#{id}"]
+    button.accordion-button.collapsed[type="button" data-bs-toggle="" data-bs-target="#ProjectItem#{id}" aria-expanded="false" aria-controls="ProjectItem#{id}"]
+      / TODO: is this correct in bootstrap grid
+      / .row
+      /   i.bi class="bi-#{icon}"
+      /   / TODO: does not work good on mobile
+      /   .px-3
+      .row
+        div
+          i.bi class="bi-#{icon}"
+          / TODO: does not work good on mobile
+          b.px-2= title1
+        div
+          .px-4= title2
   .accordion-collapse.collapse[id="ProjectItem#{id}"]
     .accordion-body
       = yield

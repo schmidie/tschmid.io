@@ -3,193 +3,362 @@
 / ---
 
 .row.justify-content-md-center
-  .col-12.col-xl-7
+  .col-12.col-xl-9
     .page-section
       .row.pt-5.text-start
-        / .d-lg-none
-        /   .col-12.pb-5
-        /     img.img-fluid.img-thumbnail src="#{image_path('portrait.png')}"
-        /     h2.text-end
-        /       a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
-        /         i.px-1.bi.bi-linkedin
-        .col-12.col-lg-6
+        .d-none.d-lg-block
+          / on desktop we want more space
+          .page-section
+        .col-12.col-lg-7
+          .pt-5.text-start
+            h1 DIGITAL EFFIZIENT
           
-          / h1 Tobias Schmid 
-          / h1.text-primary building digital products.
-
-          / .py-5.text-secondary
-          /   h3 > Software Engineering 
-          /   h3 > IT Project Management
-          /   h3 > IT Consulting 
-
-          .py-5.text-start
-            / h4 Tobias Schmid,
+            .py-3
+              .display-8 Ich begleite Unternehmen, 
+              .display-8 die stark von manuellen Abläufen geprägt sind, 
+              .display-8 zu mehr Effizienz – strategisch, technisch und auf Augenhöhe.
             
-            h2.text-primary Freelance IT Consultant 
-            h2.text-primary & Technical Project Manager
+            div.py-3
+              h4 
+                / i.px-1.bi.bi-check
+                i.bi.bi-check-circle.text-primary
+                span.px-2
+                span.text-primary Systeme
+                = " integrieren" 
+              h4
+                / i.px-1.bi.bi-check
+                i.bi.bi-check-circle.text-primary
+                span.px-2
+                span.text-primary Schnittstellen
+                = " schaffen"
+              h4
+                / i.px-1.bi.bi-check 
+                i.bi.bi-check-circle.text-primary
+                span.px-2
+                span.text-primary Prozesse
+                = " automatisieren" 
             
-            br
-            / b Software Engineer, Technical Project Manager and IT Consultant 
-            div
-              | With more than 
-              b 14 years experience 
-              | in web & software projects, 
-            br
-            div 
-              | I help companies and the public sector with 
-              b digital transformation 
-              | challenges with a focus on 
-              b system integrations 
-              | and 
-              b interfaces.
+            div.py-3
+              .display-8
+                / i.bi.bi-play-circle.text-primary
+                / span.px-2.pb-2
+                | Starte deine digitale Transformation jetzt:
+              
+              
+            
+            .text-end
+              a.button.btn.btn-outline-primary.bg-gradient href="https://calendly.com/hi-tschmid/effizienzgespraech" target="_blank"
+                i.px-3.bi.bi-headset
+                | kostenloses Effizienzgespräch buchen 
           
-            br
-            div
-              | If you are looking for some IT 
-              b professional 
-              | with 
-              b strong technical knowledge 
-              | and a 
-              b hands-on mentality
-              | , I would love to hear from you!
-          
-          
+        .col-12.col-lg-5.order-first.order-lg-1
+          img.img-fluid src="#{image_path('portrait.jpeg')}"  
 
-        .col-12.col-lg-6.order-first.order-lg-1
-          / .d-none.d-lg-block
-          img.img-fluid src="#{image_path('portrait.png')}"
-          / img.img-fluid.img-thumbnail.rounded-image src="#{image_path('portrait.png')}"
-          / img.img-fluid.rounded-circle.d-block.mx-auto src="#{image_path('portrait.png')}"
-          h2.text-end
-            a.text-dark href="https://www.linkedin.com/in/tobias-schmid/"
-              i.px-1.bi.bi-linkedin              
+    
 
-      / .row.pb-5
-      /   .col.text-start
-      /     h4 Hi, I'm Tobias Schmid,
-      /     | a 
-      /     b Software Engineer, Technical Project Manager and IT Consultant 
-      /     | with over 
-      /     b 14 years experience 
-      /     | in web & software projects. 
-      /     | Since 2019 I have worked as a freelancer and built together with various customers (startups, SMEs, corporates & the public sector) some amazing digital products, covering complex transport management systems, marketplaces, super fast APIs, digital services and many more. 
+    .page-section
+      .row.pb-3
+        .col.text-start
+          h4 
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            / | KENNST DU DAS ?
+            / KENNST DU ETWAS DAVON ?
+            | KOMMT DIR HIER ETWAS BEKANNT VOR ?
+      .row 
+        .col-12.text-start.pt-3
+
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Informationen sind verteilt: zwischen E-mail Postfächern, Excel Tabellen und verschiedenen Systemen
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Informationen sind nicht digitalisiert
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Die Abläufe im Backoffice sind mühsam und manuell
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Die Kommunikation mit Kunden und Partnern ist aufwendig: viele E-Mail Schleifen und Telefonate
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Produkte oder Produktteile sind nicht selbsterklärend und intuitiv zu benutzen
+          .display-9.pb-4
+            i.px-3.bi.bi-x-circle
+            | Der Funktionsumfang bestehender Systeme deckt die eigenen Anforderungen nicht ausreichend ab
           
+          .pt-4
+            b
+              i.px-3.bi.bi-arrow-right
+              | Dann sollten wir sprechen ...
+
+    
+
+    .page-section
+      .row.pb-3
+        .col.text-start
+          h4 
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | IN 3 SCHRITTEN ZU MEHR UNTERNEHMENSEFFIZIENZ
       .row 
         / .col-12
         /   hr.divider
         /   .pb-5
-        .col-12.col-lg-6.text-start.pt-3
+        .col-12.col-lg-4.text-start.pt-3
           / .border.border-secondary.p-5
           .card.h-100
-            .card-body
-              h4.card-title TOP SKILLS
+            / img src="#{image_path('erstgespraech_logo.png')}" class="card-img-top" alt="..."
+            / img src="#{image_path('headset.svg')}" class="card-img-top pt-2" alt="..."
+            .card-body.pt-5
+              .display-8.card-title 
+                i.px-3.bi.bi-headset
+                | Effizienzgespräch
               .card-text.pt-4
-                  div.list-group
-                    div.list-group-item.list-group-item-action.list-group-item-light Complex System Integrations
-                    div.list-group-item.list-group-item-action.list-group-item-light Interfaces (REST-APIs, Webhooks, a.o.)
-                    div.list-group-item.list-group-item-action.list-group-item-light System Architectures
-                    div.list-group-item.list-group-item-action.list-group-item-light Software Engineering
-                    div.list-group-item.list-group-item-action.list-group-item-light Stakeholder Management
-                    div.list-group-item.list-group-item-action.list-group-item-light Agile IT Project Management
-        .col-12.col-lg-6.text-start.pt-3
+                | Wir schauen uns gemeinsam dein Digitalisierungs- und Effizienz-Stand an und identifizieren erste Pain-Points. Du bekommst erste Tipps, wie du durch digitale Lösungen effizienter wirst. Entscheide dann selbst, ob ich dich bei der weiteren Strategieentwicklung und Umsetzung unterstützen soll.
+            .card-body.text-end
+              a.card-link. href="https://calendly.com/hi-tschmid/effizienzgespraech" target="_blank"
+                | jetzt kostenlos buchen
+
+        .col-12.col-lg-4.text-start.pt-3
           / .border.border-secondary.p-5
           .card.h-100
-            .card-body
-              h4.card-title EDUCATION  
+            / img src="#{image_path('lightbulb.svg')}" class="card-img-top pt-2" alt="..."
+            .card-body.pt-5
+              .display-8.card-title 
+                i.px-3.bi.bi-lightbulb
+                | Strategie Entwicklung
               .card-text.pt-4
-                div.list-group
-                  div.list-group-item.list-group-item-action.list-group-item-light
-                    .py-2
-                      div
-                        | Freie Universität Berlin
-                      div 
-                        b Master of Science
-                      div
-                        | Informatik, 2011-2015
-                  div.list-group-item.list-group-item-action.list-group-item-light
-                    .py-2 
+                | Wir entwickeln deine Digitalisierungs- & Effizienz-Strategie. Passgenau zu deinem Unternehmen und deinem aktuellen Stand - egal wo du gerade stehst. Wir identifizieren Digitalisierungspotentiale sowie aufwendige Abläufe, priorisieren und entwickeln ein Umsetzungs-Konzept.
+        .col-12.col-lg-4.text-start.pt-3
+          / .border.border-secondary.p-5
+          .card.h-100
+            .card-body.pt-5
+              .display-8.card-title  
+                i.px-3.bi.bi-gear-wide-connected
+                | Umsetzung
+              .card-text.pt-4
+                | Gemeinsam setzen wir deine Maßnahmen um - für deinen Effizienz-Boost. Je nach deiner aktuellen Situation führen wir neue Systeme ein, integrieren sie in deine Abläufe, digitalisieren und automatisieren Prozesse, entwickeln maßgeschneiderte digitale Anwendungen oder unterstützen deine Abläufe durch KI.
 
-                      div
-                        | Hochschule Konstanz
-                      div 
-                        b Bachelor of Science
-                      div 
-                        | Software Engineering, 2007-2011
+    
 
+    / .page-section
+    /   .row.pb-3
+    /     .col.text-start
+    /       h4 
+    /         i.bi.bi-play-circle.text-primary
+    /         span.px-2
+    /         | EGAL WO DU STEHST
+    /       / h4 EGAL AUF WELCHEM EFFIZIENZ LEVEL DU AKTUELL STEHST
+    /   .row 
+    /     .col-12.text-start
+    /       p.pb-3 gemeinsam entwickeln wir passgenau zu deiner aktuellen Situation einen Strategie-Plan für mehr Effizienz.
+
+    /       .display-9
+    /         / button type="button" class="btn btn-primary p-1"
+    /         / i.px-3.bi.bi-person-arms-up
+    /         i.px-3.bi.bi-circle
+    /         | Alles Manuell - Keine Digitalisierung
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / i.px-3.bi.bi-display
+    /         i.px-3.bi.bi-circle
+    /         | Digitale Systeme einführen
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / i.px-3.bi.bi-gear
+    /         i.px-3.bi.bi-circle
+    /         | Prozesse optimieren - effizient & digital 
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / icon: magic, patch-check, list-check
+    /         / i.px-3.bi.bi-list-check
+    /         i.px-3.bi.bi-circle
+    /         | Prozesse automatisieren
+    /       .display-9
+    /         i.px-3.bi.bi-three-dots-vertical
+    /       .display-9
+    /         / icon: openai
+    /         / i.px-3.bi.bi-magic
+    /         i.px-3.bi.bi-circle
+    /         | Systeme & Prozesse durch KI unterstützen
+          
+    
+
+    .page-section
+      .row.pb-3
+        .col.text-start
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | DEIN GEWINN
+          / h4 KENNST DU ETWAS DAVON ?
+      .row 
+        .col-12.text-start
+          
+          p.pb-3 Durch eine klare Strategie und einer gut integrierten Systemlandschaft bekommst du:
+
+          .display-9.pb-4
+            i.px-3.bi.bi-clock
+            | Mehr Zeit für das eigentliche Kernbusiness 
+          .display-9.pb-4
+            i.px-3.bi.bi-check
+            | Weniger Fehler durch händische manuelle Prozesse 
+          .display-9.pb-4
+            i.px-3.bi.bi-stars
+            | Mehr Qualität und höhere Kundenzufriedenheit
+          .display-9.pb-4
+            i.px-3.bi.bi-cash-stack
+            | Unternehmenseffizienz und mehr Gewinn
+
+    
+
+    .page-section
+      .row.pb-3
+        .col.text-start
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | ÜBER MICH
+          / h4 KENNST DU ETWAS DAVON ?
+      .row 
+        .col-12.col-lg-9.text-start.pt-3
+          p Hi, ich bin Tobi,
+          p ich konzipiere, entwickle und integriere Software-Systeme.
+          p Schon seit meiner Kindheit bin ich digital begeistert. Aufgewachsen mit einem knatternden 56k Modem, habe ich schon früh angefangen, eigene Webanwendungen zu entwickeln.
+
+          p Für mich war schnell klar: Ich will verstehen, wie Software-Systeme wirklich funktionieren und wie sie nicht nur technisch sauber, sondern auch echten Mehrwert für Unternehmen schaffen.
+          p Deshalb habe ich Software Engineering in Konstanz studiert und anschließend an der Freien Universität Berlin meinen Master in Informatik gemacht. Meine Schwerpunkte waren Webtechnologien und Unternehmensgründungen in der IT-Branche.
+
+          / p Für mich war klar, ich werde Informatik studieren, um wirklich die tiefen der Software- und System-Ingeneurskunst zu verstehen und selber komplexe Systeme aufbauen und entwickeln zu können.
+          / p Nach meinem Bachelor Studium in Software Engineering in Konstanz bin ich an die Freie Universität Berlin für mein Master Studiengang in Informatik. Ich will und wollte noch mehr lernen und verstehen. Mein Vertiefungsgebiet waren Webtechnologien. Dazu habe ich mich auf Unternehmensgründungen in der IT Branche fokussiert.
+          / p Seit 2012 entwerfe und entwickle ich Software-Systeme als Software Engineer, Mitgründer und Berater. Meine 
+          p Durch meine eigenen Gründungen und Rollen als CTO kenne ich den Alltag in KMUs und Startups: wenig Zeit, viele Prioritäten, kaum Kapazität für saubere Prozesse und effiziente Digitalisierung.
+          p Deshalb helfe ich seit 2012 Unternehmen durch digitale Lösungen effizienter zu werden - auf Augenhöhe.
+          
+          / p Diese Kombination aus unternehmerischem Denken und technischer Tiefe ist meine Dienstleistung.
+          
+          p Diese Kombination aus unternehmerischem Denken und technischer Tiefe zeichnet meine Arbeit aus und hilft meinen Kunden zu mehr Unternehmenseffizienz.
+
+          a.card-link href="https://calendly.com/hi-tschmid/effizienzgespraech" target="_blank"
+            i.px-3.bi.bi-arrow-right
+            | kostenloses Erstgespräch
+
+        .col-12.col-lg-3.text-start.pt-3
+          .d-lg-none
+            .pt-5
+          .card.h-100
+            .card-body
+              .py-2
+                div
+                  | Freie Universität Berlin
+                div 
+                  b 
+                    i.bi.bi-award
+                    = " Master of Science"
+                div
+                  | Informatik
+                hr
+              .py-2 
+                div
+                  | Hochschule Konstanz
+                div 
+                  b 
+                    i.bi.bi-award
+                    =" Bachelor of Science"
+                div 
+                  | Software Engineering
+                hr
+              .py-2 
+                div
+                  a.card-link.text-secondary href="https://www.linkedin.com/in/tobias-schmid/" target="_blank"
+                    i.px-3.bi.bi-arrow-right
+                    | Meine Berufserfahrung
+    
+    
+
+    .page-section
+      .row.pb-3
+        .col.text-start
+          h4  
+            i.bi.bi-play-circle.text-primary
+            span.px-2
+            | EINE AUSWAHL AN ERFOLGSGESCHICHTEN
       .row 
         .col.pt-5
-          / .py-5
-          /   hr.divider
-          .pb-5.text-start
-            h4 A selection of my freelance projects
           #projectAccordion.accordion.text-start
-            = partial(:project_item, :locals => { id: 1, title1: "Interim CTO @ Vemove GmbH", title2: "Transport-Management-System" }) do
-              | Conception and development of a transportation management system (TMS) for the eﬃcient processing of vehicle transport orders.
-              br
-              br
-              | > Digitalization and automation of previously manual business processes.
-              br
-              | > Mapping of logistics processes and integration of external systems.
-              br
-              | > Communication and coordination between the team and external stakeholders.
-              br
-              | > Company scaling through the developed TMS in shortest time.
+            = partial(:project_item, :locals => { id: 1, title1: "Vemove GmbH", title2: "Ein maßgeschneidertes TMS für Effizienz und Skalierung", icon:"truck-flatbed" }) do
+              / p 
+              /   b Vorher: 
+              /   | Viel Handarbeit - Viele Excel Tabellen, E-mail und Telefon Schleifen.
+              / p 
+              /   b Nachher: 
+              /   | ein maßgeschneidertes Transport Management System, welches die Abläufe digitalisiert und automatisiert abbildet und zur Skalierung von Vemove verholfen hat.
+              / p 
+              /   b Mein Auftrag: 
 
-            = partial(:project_item, :locals => { id: 2, title1: "IT Project Manager @ ]init AG[ ", title2: "Elterngeld Digital" }) do
-              | Building digital services for Germany.
-              br
+            / icon: building
+            = partial(:project_item, :locals => { id: 2, title1: "]init AG[ - Bundesfamilienministerium", title2: "Elterngeld digital beantragen - Digitalisierung von Verwaltungsdienstleistungen", icon:"bank" }) do
+              / p 
+              /   b Vorher: 
+              /   | Elterngeldanträge mussten teils augedruckt und händisch ausgefüllt werden.
+              / p 
+              /   b Nachher: 
+              /   | Durch ElterngeldDigital haben wir das Fundament für digitale Elterngeldanträge geschaffen.
+              / p 
+              /   b Mein Auftrag: 
 
-              | Project Management of challenging projects for the Federal Ministry of Family Affairs (Bundesfamilienministerium) for the digital transformation of administrative services.
-              br
-              br
-              | > Management of the teams to achieve the milestones (waterfall - scrum combination).
-              br
-              | > Stakeholder management of representatives from federal and state ministries in workshops and committees.
-              br
-              | > Coordination and supervision of the further development of the XÖV standard XFamilie for the 
-              | standardization of data structures (for digital communication in the family sector).
-              br
-              | > Integration of OSCI/XTA2/DVDV and COM Despina into the Elterngeld Digital service.
-
-            = partial(:project_item, :locals => { id: 3, title1: "IT Consultant @ Scheibner m-tec GmbH", title2: "Measurement-Expert-System" }) do
-              | Conception and development of a system for measuring and calculating the dimensional accuracy of e-bike and bicycle frames. 
-              | Automated generation of measurement protocols for test reports.
+            = partial(:project_item, :locals => { id: 3, title1: "Scheibner m-tec GmbH", title2: "Automatisierte Generierung von Messprotokollen durch ein Assistenz-System", icon:"wrench-adjustable"  }) do
+              / p 
+              /   b Vorher: 
+              /   | Ein mechanisches Messsystem zur Vermessung von E-Bike- und Fahrradrahmen, welches ohne Anleitung schwer zu bedienen ist 
+              / p 
+              /   b Nachher: 
+              /   | Ein digitales Assistenz-System, welches den gesammten Messablauf digital abbildet und den Nutzer durch die Messung begleitet und abschließend automatisiert ein Messprotokoll (für Prüfberichte) generiert.
+              / p 
+              /   b Mein Auftrag: 
  
-            = partial(:project_item, :locals => { id: 4, title1: "IT Consultant @ coVidGO.io", title2: "Corona-Warn-App Integration" }) do
-              | Connecting coVidGO with a microservice to the Corona-Warn-App (CWA) over the CWA server infrastructure.
+            / icon: hospital
+            = partial(:project_item, :locals => { id: 4, title1: "Aino Betriebsmedizin GmbH", title2: "Integration der coVidGO Zertifikate in die Corona-Warn-App", icon: "activity" }) do
+              / p 
+              /   b Vorher: 
+              /   | 
+              / p 
+              /   b Nachher: 
+              /   | 
+              / p 
+                b Mein Auftrag: 
+            /  zur Vorausschauende Wartung von Flottenfahrzeugen
+            = partial(:project_item, :locals => { id: 5, title1: "Volkswagen AG", title2: "Integration der On-Board Diagnosen (OBD2) in ein Flotten Wartungsmanagement System", icon: "car-front-fill" }) do
+              / p 
+              /   b Vorher: 
+              /   | Auf dem deutschen
+              / p 
+              /   b Nachher: 
+              /   | 
+              / p 
+              /   b Mein Auftrag: 
 
-            = partial(:project_item, :locals => { id: 5, title1: "IT Produkt Manager & Consultant @ Volkswagen AG", title2: "Preventive Maintenance Platform" }) do
-              | Developing a PM system which integrates the On-board diagnostics(OBD2) of fleet vehicles into a Fleet Maintenance Management System.
-              | Piloting the PM System with a large logistic fleet.
-              br
-              | Generation of important market information about fleet maintenance for the VW 
-              | Commercial Vehicles Group and the Smart Mobility and Transport Team.
+            = partial(:project_item, :locals => { id: 6, title1: "FIEGE Logistik", title2: "Erstellung einer technischen Sorgfaltsprüfung (TDD) für die strategische Weiterentwicklung der \"angelbringts\" Plattform", icon: "box" }) do
+              / p 
+              /   b Vorher: 
+              /   | 
+              / p 
+              /   b Nachher: 
+              /   | 
+              / p 
+              /   b Mein Auftrag: 
 
-            = partial(:project_item, :locals => { id: 6, title1: "IT Consultant @ FIEGE Logistik", title2: "Technical Due Diligence" }) do
-              | Technical Screening of the IT infrastructure and system-architecture of the “angelbringts” logistic platform. Advising a next step roadmap within a Technical Due Diligence.
-
-            = partial(:project_item, :locals => { id: 7, title1: "IT Consultant @ DPD (Schweiz) AG", title2: "Transport Management Platform" }) do
-              | After Exit of ImagineCargo to DPD-Schweiz in early 2020, Setup & Implementing the 
-              | IT-Infrastructure of ImagineCargo for a new pilot project of DPD.
-
-      / .row 
-      /   .col
-      /     .py-5
-      /       hr.divider
-      /     .pb-3
-      /       h2 Work Experience
-      /     #projectAccordion.accordion.text-start
-      /       = partial(:project_item, :locals => { id: 1, title1: "TODO", title2: "TODO" }) do
-      /         | TODO
-              
-    .page-section
-      .row 
-        .col
-          .d-grid.gap-2.col-12.col-lg-6.mx-auto
-            a.button.btn.btn-primary href="mailto:hi@tschmid.io"
-              i.bi.bi-rocket-takeoff-fill
-              |  start something great 
-              i.bi.bi-rocket-takeoff-fill
-    / .d-none.d-lg-block
-      / .py-5
-      / .py-5
+            / icon: box box-seam-fill
+            = partial(:project_item, :locals => { id: 7, title1: "DPD (Schweiz) AG", title2: "Integration des ImagineCargo TMS System für ein DPD Pilot Projekt", icon: "box-seam" }) do
+              / p 
+              /   b Vorher: 
+              /   | 
+              / p 
+              /   b Nachher: 
+              /   | 
+              / p 
+              /   b Mein Auftrag: 
