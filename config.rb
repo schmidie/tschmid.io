@@ -1,7 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-set :title, "tschmid.io"
+set :title, "systemlayer.de"
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

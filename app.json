@@ -1,5 +1,5 @@
 {
-  "name": "TSchmid.io",
+  "name": "Systemlayer.de",
   "scripts": {
     "dokku": {
       "predeploy": ""
