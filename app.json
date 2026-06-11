@@ -1,5 +1,5 @@
 {
-  "name": "TSchmid.io",
+  "name": "ki-kommunikator.de",
   "scripts": {
     "dokku": {
       "predeploy": ""
